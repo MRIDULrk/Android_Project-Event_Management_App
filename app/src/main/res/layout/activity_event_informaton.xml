@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Event_Informaton">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Information"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="#FFC107"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="Name"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/place"
+        android:hint="place"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:text="Type"
+          android:gravity="left"
+           android:textColor="@color/black"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:layout_weight="1">
+
+       </TextView>
+
+       <CheckBox
+           android:id="@+id/indoor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Indoor"
+           android:gravity="left"
+           android:textSize="15sp"
+           android:padding="10dp"
+           android:textStyle="bold"
+           android:layout_weight="1">
+
+       </CheckBox>
+
+       <CheckBox
+           android:id="@+id/outdoor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Outdoor"
+           android:gravity="left"
+           android:textSize="15sp"
+           android:padding="10dp"
+           android:textStyle="bold"
+           android:layout_weight="1">
+
+       </CheckBox>
+
+       <CheckBox
+           android:id="@+id/online"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Online"
+           android:gravity="left"
+           android:textSize="15sp"
+           android:padding="10dp"
+           android:textStyle="bold"
+           android:layout_weight="1">
+
+       </CheckBox>
+
+   </LinearLayout>
+
+    <EditText
+        android:id="@+id/date_time"
+        android:hint="Date_Time"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/capacity"
+        android:hint="Capacity"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="Email"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:hint="Phone"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:hint="Description"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:maxLines="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+
+        <TextView
+            android:id="@+id/errormsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Error Massage Will Show Here"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#E53935"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#FDD835"
+            android:text="Upload"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#FDD835"
+            android:text="Show"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#FDD835"
+            android:text="Save"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
